@@ -1,0 +1,80 @@
+patient_id,generated_response,human_decision
+P001,"Decision: Route for Review
+-Reason: Based on the claim and policy analysis, here is the step-by-step evaluation: 1. Diagnosis Coverage: ✓ PASS - Claimed diagnosis: M17.0 (Osteoarthritis of knee) - This diagnosis is listed in the policy's covered diagnoses 2. Procedure Coverage: ✓ PASS - Claimed procedure: 70551 (MRI of brain) - This procedure is listed in the policy's covered procedures 3. Age Requirement: ✓ PASS - Patient age: 13 years old - Procedure 70551 allows age range 0-120 - Patient falls within the allowed range 4. Gender Requirement: ✓ PASS - Patient gender: Male - Procedure 70551 has no gender restrictions (any) - Patient meets requirement 5. Preauthorization Requirement: ✗ FAIL - Procedure 70551 requires preauthorization: Yes - Preauthorization obtained: No - This is a critical gap — the required preauthorization was not obtained prior to the claim Conclusion: While the diagnosis is covered, the procedure is covered, and the patient meets all age and gender requirements, the claim lacks the required preauthorization. This must be reviewed by a human reviewer to determine if the preauthorization can be obtained retroactively or if the claim should be denied/adjusted based on policy terms.",Route for Review
+P002,"Decision: Route for Review
+-Reason: Based on the claim and policy analysis, the following issues require human review: 1. Diagnosis Coverage Issue: The patient's diagnosis code is M17.0 (Bilateral primary osteoarthritis of knees), but this diagnosis is NOT listed in the policy's covered diagnoses. The policy only covers: I10, E11.9, M54.5, and J45.909. 2. Procedure Coverage Issue: The claimed procedure code is 27447 (Total knee replacement), but this procedure is NOT listed in the policy's covered procedures. The policy only covers procedures 99213, 93000, and 97110. 3. Preauthorization Status: While preauthorization was obtained (which is positive), it was obtained for a procedure that is not covered under the policy. Summary: The claim involves a procedure (27447 - Total knee replacement) and diagnosis (M17.0 - Bilateral primary osteoarthritis of knees) that fall outside the Bronze Essential policy's coverage guidelines. This case requires human review to determine if there are any exceptions, alternative coverage options, or if the patient should be informed of the coverage limitations.",Route for Review
+P003,"Decision: Route for Review
+-Reason: The claim for patient P003 fails multiple coverage requirements: 1. Diagnosis Coverage: ✓ PASS - Claimed diagnosis S83.511A is listed in covered diagnoses 2. Procedure Coverage: ✓ PASS - Procedure 27447 is listed as a covered procedure 3. Age Requirement: ✗ FAIL - Patient age: 1 year old - Policy requirement for procedure 27447: age 40-100 - Patient does not meet the minimum age requirement of 40 4. Gender Requirement: ✓ PASS - Procedure 27447 allows any gender; patient is female 5. Preauthorization: ✗ FAIL - Preauthorization is required for procedure 27447 - Preauthorization has NOT been obtained Summary: This claim must be routed for human review due to: - Age mismatch: Patient is 1 year old but procedure 27447 requires age 40-100 - Missing preauthorization: Required preauthorization was not obtained prior to the procedure A human reviewer should determine whether there are clinical circumstances that warrant an exception to the age requirement, or if this claim was submitted in error.",Route for Review
+P004,"Decision: Route for Review
+-Reason: The claim for patient P004 fails multiple coverage requirements: 1. Diagnosis Coverage: ✓ PASS - Claimed diagnosis K57.30 is listed in the policy's covered diagnoses. 2. Procedure Coverage: ✓ PASS - Procedure code 29881 is covered under policy POL002. 3. Age Requirement: ✗ FAIL - Patient age: 12 years old - Policy requirement for procedure 29881: Age 18-90 - The patient does not meet the minimum age requirement (must be 18+). 4. Gender Requirement: ✓ PASS - Procedure 29881 allows any gender; patient is female. 5. Preauthorization: ✗ FAIL - Preauthorization is required for procedure 29881 - Preauthorization status: NOT OBTAINED - This is a mandatory requirement that has not been met. Summary: This claim has two critical issues: (1) the patient's age (12) falls outside the covered age range (18-90) for procedure 29881, and (2) required preauthorization was not obtained. Both issues must be resolved before approval. This case requires human review to determine if an exception can be made or if the claim should be denied.",Route for Review
+P005,"Decision: Route for Review
+-Reason: The claimed procedure code 73721 is not listed in the Silver Plus (POL002) policy's covered procedures. While the patient's diagnosis (M17.0) is covered and the patient meets age/gender requirements, the specific procedure requires human review to determine if: (1) the procedure code is correct, (2) there is an alternative covered procedure that should be used, or (3) an exception or appeal is warranted.",Route for Review
+P006,"Decision: Route for Review
+-Reason: The claim does not meet coverage requirements. The patient's diagnosis code (E11.9 - Type 2 diabetes) is not included in the policy's list of covered diagnoses (M17.0, S83.511A, R07.9, Z00.00). Additionally, the claimed procedure code 97110 is not listed among the policy's covered procedures (27447, 70551, 73721, 99213). While preauthorization was properly obtained, the fundamental coverage gaps require human review to determine if there are alternative covered diagnoses/procedures or if an exception applies.",Route for Review
+P007,"Decision: Approved
+-Reason: Patient P007's claim meets all coverage requirements. The diagnosis (M54.5) is covered, the procedure (71046) is covered, the patient's age (46) falls within the allowed range (0-120), gender is acceptable, and preauthorization is not required for this procedure. All criteria are satisfied for approval.",Approved
+P008,"Decision: Approved
+-Reason: ## Claim Evaluation Summary for Patient P008
+
+Decision: APPROVE
+
+Reasoning:
+
+Let me verify each coverage requirement for the claimed procedure:
+
+1. Diagnosis Coverage: ✓ PASS
+   - Claimed diagnosis: S83.511A (Sprain of anterior cruciate ligament of right knee)
+   - Policy covers: S83.511A is listed in covered diagnoses
+   
+2. Procedure Coverage: ✓ PASS
+   - Claimed procedure: 27447 (Arthroplasty, knee, condyle and plateau; medial AND lateral compartments)
+   - Policy covers: 27447 is listed as a covered procedure
+
+3. Age Requirement: ✓ PASS
+   - Patient age: 59 years old
+   - Policy requirement for 27447: age 40-100
+   - Patient falls within the allowed range
+
+4. Gender Requirement: ✓ PASS
+   - Patient gender: Male
+   - Policy requirement for 27447: Any gender
+   - No gender restriction applies
+
+5. Preauthorization: ✓ PASS
+   - Preauthorization required: Yes
+   - Preauthorization obtained: Yes
+   - Requirement satisfied
+
+All coverage criteria are met. This claim is approved for payment.",Approved
+P009,"Decision: Route for Review
+-Reason: The claimed diagnosis code K21.9 (Gastro-esophageal reflux disease) is not covered under the patient's Gold Comprehensive policy (POL003). The policy only covers diagnoses M17.0, S83.511A, R07.9, and Z00.00. While the procedure (70551) is covered, the patient's age is appropriate, and preauthorization has been obtained, the diagnosis mismatch requires human review to determine if there is a coding error, if the diagnosis should be appealed, or if alternative coverage applies.",Route for Review
+P010,"Decision: Route for Review
+-Reason: Based on the claim and policy analysis, the following issues require human review: 1. Diagnosis Coverage Issue: The patient's diagnosis code is S83.511A (Sprain of anterior cruciate ligament of right knee, initial encounter). However, the policy's covered diagnoses list includes only: I10, E11.9, M54.5, and J45.909. The claimed diagnosis S83.511A is NOT on the covered diagnoses list. 2. Procedure Coverage Issue: The claimed procedure code is 27447 (Arthroplasty, knee, condyle and plateau; medial AND lateral compartments with or without patellofemoral). This procedure is NOT listed among the policy's covered procedures (99213, 93000, 97110). 3. Age and Gender: The patient is 82 years old and female. While age is within acceptable ranges for covered procedures, this is moot given the procedure itself is not covered. 4. Preauthorization: No preauthorization was required or obtained, which aligns with the claim record. Conclusion: This claim must be routed for human review due to the uncovered diagnosis and uncovered procedure code. A medical reviewer should determine if there are alternative covered procedures or diagnoses that apply, or if an exception/appeal is warranted.",Route for Review
+P011,"Decision: Route for Review
+-Reason: Based on the claim and policy analysis, the following issues require human review: 1. Diagnosis Coverage Issue: - Claimed diagnosis: K21.9 (Gastro-esophageal reflux disease) - Policy covers only: I10, E11.9, M54.5, J45.909 - K21.9 is NOT in the covered diagnoses list ❌ 2. Procedure Coverage Issue: - Claimed procedure: 73721 (Radiological examination) - Policy covers only: 99213, 93000, 97110 - 73721 is NOT in the covered procedures list ❌ 3. Patient Demographics: - Age 47, Female ✓ (within acceptable ranges for all covered procedures) Summary: The claim cannot be automatically approved because: - The primary diagnosis (K21.9) is not listed as a covered diagnosis under the Bronze Essential policy - The requested procedure (73721) is not listed as a covered procedure under the policy This case requires human review to determine if there are any policy exceptions, alternative coverage pathways, or if the claim should be denied based on policy guidelines.",Route for Review
+P012,"Decision: Approved
+-Reason: ## Claim Evaluation Summary for Patient P012
+
+Decision: APPROVE
+
+Reasoning:
+
+Let me verify each coverage requirement for the claimed procedure:
+
+1. Diagnosis Coverage: The patient has diagnosis code I10 (Essential hypertension), which is listed in the policy's covered diagnoses. ✓
+
+2. Procedure Coverage: The claimed procedure is 97110 (Physical therapy), which is explicitly listed as a covered procedure under the Bronze Essential policy. ✓
+
+3. Age Requirement: The patient is 77 years old. The policy allows procedure 97110 for ages 0-120, so the patient falls within the acceptable age range. ✓
+
+4. Gender Requirement: The policy specifies ""any"" gender for procedure 97110, so there are no gender restrictions. The patient is female, which is acceptable. ✓
+
+5. Preauthorization: The policy requires preauthorization for procedure 97110. The claim record shows that preauthorization was obtained (Preauthorization obtained: True). ✓
+
+All coverage requirements are satisfied. The claim meets all policy criteria and should be approved for payment.",Approved
+P013,"Decision: Route for Review
+-Reason: While the diagnosis (R07.9) is covered and preauthorization was properly obtained, the patient's age (82) exceeds the maximum age limit (90) specified in the policy for procedure 29881. Although the patient is within the 18-90 range technically, this is a borderline case that requires human review to determine if the age restriction should be waived or if alternative procedures are appropriate for this elderly patient.",Approved
+P014,"Decision: Route for Review
+-Reason: The claimed procedure 29881 is not listed in the policy's covered procedures. The Bronze Essential policy (POL001) only covers: - 99213 (office visit) - 93000 (EKG) - 97110 (physical therapy) While the patient's diagnosis (I10 - Essential hypertension) is covered under the policy, and the patient meets age/gender requirements (80-year-old male, within 0-120 age range), the specific procedure code 29881 does not appear in the covered procedures list. Step-by-step analysis: 1. ✓ Diagnosis covered: I10 is listed in covered diagnoses 2. ✗ Procedure covered: 29881 is NOT in the covered procedures list 3. ✓ Age requirement: Patient age 80 is within 0-120 range 4. ✓ Gender requirement: No gender restrictions apply 5. ✓ Preauthorization: Not required for this claim Since the procedure is not explicitly covered under the policy, this claim must be routed for human review to determine if there are any exceptions, alternative coverage options, or if the procedure code should be reconsidered.",Route for Review
+P015,"Decision: Approved
+-Reason: All coverage requirements are satisfied. The claimed procedure (99213 - office visit) is covered under the Gold Comprehensive policy (POL003) for a 76-year-old male patient. The diagnosis (R07.9) is covered, the procedure is covered, the patient's age falls within the allowed range (0-120), and no preauthorization is required. The claim meets all policy criteria for approval.",Approved
